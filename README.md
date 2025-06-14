@@ -19,10 +19,12 @@ uv sync
 # let the packages download, takes a short time | uv is quite fast
 
 source .venv/bin/activate
-# activates python virtual env, install if it fails, "sudo apt update && sudo apt install python3-venv"
+# activates python virtual env, install if it fails,
+# "sudo apt update && sudo apt install python3-venv"
 
 uvicorn main:app --reload --workers 1
-# this serves the api on 127.0.0.1:8000 or http://localhost, which you can cUrl to via browser
+# this serves the api on 127.0.0.1:8000 or http://localhost,
+# which you can cUrl to via browser
 ```
 
 Leave the app running and now, to time the I/O test with following command on another shell
